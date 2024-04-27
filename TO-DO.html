@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="To-do">
+      
+        <div class="navbar">
+            <a><img src="images/logos.png" id="logo"></a>
+                    <a href="mentorsprofile.html">Mentors Profile</a>
+                    <a href="Goals.html">Goals</a>
+                    <a href="TO-DO.html">TO-DO list</a>
+                    <a href="Achievements.html">Achievements</a>
+                    <a href="index.html">SIGN UP</a>
+                    <a href="login.html">LOGIN</a>
+            </div>
+            <div class="script">
+             
+            <input type="text" id="new-task" placeholder="Enter a new task">
+            <button id="add-task">Add Task</button>
+            <ul id="todo-list">Delete</ul>
+          
+            <script>
+              const todoList = document.getElementById('todo-list');
+              const newTaskInput = document.getElementById('new-task');
+              const addTaskButton = document.getElementById('add-task');
+              const tasks = []; 
+              addTaskButton.addEventListener('click', function() {
+                const task = newTaskInput.value.trim(); 
+                if (task) { 
+                  tasks.push(task);
+                  newTaskInput.value = '';
+                  renderTodoList();
+                }
+              });
+              function renderTodoList() {
+                todoList.innerHTML = ''; 
+                tasks.forEach((task, index) => {
+                  const listItem = document.createElement('li');
+                  listItem.innerText = task;
+                  const deleteButton = document.createElement('button');
+                  deleteButton.innerText = 'Delete';
+                  deleteButton.addEventListener('click', function() {
+                    tasks.splice(index, 1); 
+                    renderTodoList();
+                  });
+                  listItem.appendChild(deleteButton);
+                  todoList.appendChild(listItem);
+                });
+              }
+            </script>
+            </div>
+            <a href="NYJ.html">NYJ</a>
+          
+    </div>
+    <script src="script.js"></script> 
+   
+</body>
+</html>
