@@ -250,7 +250,7 @@
         text-align: center;
     }
     #sign{
-        background-color: #f44336;
+      background-color: #f44336;
       color: white;
       padding: 14px 25px;
       text-align: center;
@@ -260,8 +260,8 @@
     
     
     .navbar{
-        display:grid;
-        flex-direction: column;
+        display:flex;
+        flex-wrap: wrap;
         /* justify-content: space-evenly;  */
         /* text-decoration: none; */
         border: solid 1px; 
@@ -269,8 +269,11 @@
         border-radius: 20px;
         background-color: aquamarine; 
         font-size: 20px; 
-        margin-right: 0px;
-        text-align: left;
+        margin-right:200px;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        gap: 50px;
        
         
     }
@@ -290,24 +293,21 @@
         color:black;
     }
     #landingpageimage{
-        width: 200px;
-        height: 100px;
+        width: 400px;
+        height: 200px;
         border-radius: 15px;
         
     }
     .statistics{
-        display: grid;
-        flex-direction: column;
+        display: flex;
         flex-wrap: wrap;
         border: solid white;
         border-radius: 10px;
         background-color:aquamarine;
-        height: 300px;
+        height: 100px;
         /* width: 200px; */
         /* justify-content: center; */
-        gap: 10%;
-        margin-top: 0px;
-        text-align: left;
+        
     }
     #features{
         display: block;
@@ -401,7 +401,7 @@
         /* margin-left: 20%; */
         width: 70%;
         border-radius: 90%;
-        margin: 6%;
+        margin: 16%;
         align-items: center;
         margin-left: 15%;
         margin-top: 1%;
@@ -434,11 +434,11 @@
         background-color: aqua;
         /* margin-left: 10%; */
         /* margin-right:100px; */
-        height: 550px;
+        height: 950px;
         width: 100%;
         justify-content: center;
         border-radius: 5px;
-        font-size: 15px;
+        font-size: 20px;
     
     }
     #button{
@@ -498,8 +498,8 @@
     
     
     .navbar{
-        display:flex;
-        flex-wrap: wrap;
+        display:grid;
+        flex-direction: column;
         justify-content: space-evenly; 
         text-decoration: none;
         border: solid 1px; 
