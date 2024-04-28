@@ -38,15 +38,14 @@
 
 
 .navbar{
-    display: flex;
-    justify-content: space-evenly;
+    display:flex;
+    justify-content: space-evenly; 
     text-decoration: none;
-    border: solid 1px;
-    align-items: center;
+    border: solid 1px; 
     border-color:aqua;
     border-radius: 20px;
-    background-color: aquamarine;
-    font-size: 20px;
+    background-color: aquamarine; 
+    font-size: 20px; 
 }
 
 .landingpagebody{
@@ -76,6 +75,7 @@
     height: 180px;
     justify-content: center;
     gap: 20%;
+    margin-top: 70px;
 }
 #features{
     display: block;
@@ -89,27 +89,37 @@
 
 }
 .mentor{
-    border: solid;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 100%;
+    border-radius: 20px;
+    border: solid 1px;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    height: 850px;
 }
 #texts{
-    justify-content: center;
+   
+    font-size: 90px;
+
 }
 .Goals{
-    border: solid 1px;
+    /* border: solid 1px;
     background-color: aquamarine;
     width: 60%;
     margin-left: 20%;
+    border-radius: 15px;
+    height: 200px;
+    border-color: black; */
+    border: solid 1px;
+    margin: 50px;
 }
 
 .To-do{
-    border: solid;
+    border: solid 1px;
     align-items:center ;
-    width:40% ;
-    margin-left: 30%;
-    height: 5%;
+    width:100% ;
+    margin: 50px;
+    border-radius: 20px;
 }
 #texts{
    justify-content: center;
@@ -117,8 +127,9 @@
    font-size: 25px;
 }
 #profilepic{
-    margin-left: 35%;
-    border-radius: 50px;
+    width: 10%;
+    border-radius: 30px;
+
 }
 #new-task{
     width: 60%;
@@ -136,21 +147,27 @@
     
     padding: 20px;
     background-color:white;
-    color:white;
+    color:black;
     border-radius: 10px;
+
    
 }
+
 .Achievements{
     border: solid 1px;
-    width: 50%;
-    margin-left: 30%;
+    width: 70%;
+    margin-left: 10%;
     height: 600px;
+    border-radius: 20px;
 }
 .Achieve{
     /* margin-left: 20%; */
-    width: 90%;
+    width: 95%;
     border-radius: 90%;
     margin: 6%;
+    align-items: center;
+    margin-left: 1%;
+    margin-top: 1%;
    
 }
 #sign{
@@ -177,65 +194,85 @@
 }
 #Summary{
     border: solid 1px;
-    background-color: aqua;
-    margin-left: 100px;
+    background-color: white;
+    
     margin-right:100px;
     height: 500px;
-    width: 30%;
+    width: 100%;
     justify-content: center;
+    border-radius: 20px;
+    font-size: 25px;
 
+}
+#button{
+    padding: 10px;
+}
+#nyj{
+    margin-left: 20px;
+}
+#signin {
+    border: solid 1px;
+    padding: 20px;
+    text-decoration-line: none;
+    border-radius: 20px;
+}
+#signin a{
+    text-decoration: none;
 }
 @media screen and ( min-width:250px) and (max-width:500px){
     .form{
-        margin: 0 auto;
-        padding: 20px;
-        width: 80%;
+       padding: 20px;
+        width: 90%;
         border: solid 2px; color: black;
         justify-content: center;
-    }
-    .input{
-        padding: 20px;
-        border-radius: 5px;
-        border: solid 2px;
-        width: 70%;
-       
-        align-items: center;
         
     }
-    ::-ms-input-placeholder { 
+    .input{
+        padding: 1px;
+        border-radius: 2px;
+        border: solid 2px;
+        width: 80%;
+       justify-content: center;
+        
+    }
+    ::-ms-input-placeholder { /* Edge 12-18 */
         color:rgb(13, 207, 207);
       }
       
       ::placeholder {
         color:rgb(13, 207, 207);
       }
-    button{
-        padding:  60 px;
-        border: 5px solid black;
-        background-color:white;
-        color:white;
-        border-radius: 5px ;
-        width: 40%;
-    }
+    
     .icons{
-       align-items: center;
-       gap: 70px;
+        justify-content: space-around;
     }
     #signup{
         text-align: center;
     }
+    #sign{
+        background-color: #f44336;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
     
     .navbar{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-around;
-        margin-top: 10px;
-        border: solid 1px;
-        align-items: center;
+        display:grid;
+        flex-direction: column;
+        /* justify-content: space-evenly;  */
+        /* text-decoration: none; */
+        border: solid 1px; 
         border-color:aqua;
         border-radius: 20px;
-        background-color: aquamarine;
-        font-size: 15px;
+        background-color: aquamarine; 
+        font-size: 20px; 
+        margin-right: 0px;
+        text-align: left;
+       
+        
     }
     
     .landingpagebody{
@@ -244,109 +281,181 @@
         background-color:white;
         justify-content: space-around;
         text-decoration:black;
-        margin: 40px;
-        gap: 30px;
+        margin: 10px;
+        gap: 20px;
     }
     .landingpagetext{
         display:block;
-        font-size:20px;
+        font-size:15px;
         color:black;
     }
     #landingpageimage{
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 100px;
         border-radius: 15px;
         
     }
     .statistics{
-        display: flex;
+        display: grid;
+        flex-direction: column;
         flex-wrap: wrap;
         border: solid white;
-        border-radius: 20px;
+        border-radius: 10px;
         background-color:aquamarine;
-        height: 330px;
-        justify-content: center;
-        gap: 5%;
+        height: 300px;
+        /* width: 200px; */
+        /* justify-content: center; */
+        gap: 10%;
+        margin-top: 0px;
+        text-align: left;
     }
     #features{
         display: block;
+        font-size: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
     }
     #featureicons{
         display: flex;
-        gap: 30px;
+        gap: 20px;
     }
     #copyright{
         text-align: center;
     
     }
     .mentor{
-        border: solid;
-        width: 90%;
-        margin-left: 1%;
-        margin-right: 29%;
+         width: 90%;
+        border-radius: 20px;
+        border: solid 1px;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+        height: 300px
+        
+        
+    }
+    #texts{
        
-       
+        font-size: 50px;
+    
     }
     .Goals{
-        border: solid 1px;
+        /* border: solid 1px;
         background-color: aquamarine;
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 15px;
+        height: 200px;
+        border-color: black; */
+        border: solid 1px;
+        margin: 50px;
     }
     
     .To-do{
-        border: solid;
+        border: solid 1px;
         align-items:center ;
         width:90% ;
-        margin-left: 3%;
-        height: 5%;
+        margin: 10px;
+        border-radius: 10px;
     }
     #texts{
        justify-content: center;
        margin-left: 0%;
-       font-size: 15px;
+       font-size: 10px;
     }
     #profilepic{
-        margin-left: 20%;
-        border-radius: 60px;
-        width: 90px;
+        width: 40%;
+        border-radius: 30px;
+    
     }
     #new-task{
         width: 60%;
-        padding: 20px;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 20px;
     }
     #add-task{
-        width: 25%;
-        padding: 5px;
-        background-color: black;
+        width: 15%;
+        padding: 10px;
+        color: black;
+        border-radius: 10px;
     }
     #todo-list{
-        width: 52%;
-        padding: 10px;
+        
+        padding: 20px;
         background-color:white;
-        border-color: black;
-        border: solid 1px;
+        color:black;
+        border-radius: 10px;
+    
+       
     }
+    
     .Achievements{
         border: solid 1px;
-        width: 90%;
-        margin-left: 0%;
-        height: 700px;
+        width: 70%;
+        /* margin-left: 30%; */
+        height: 300px;
+        border-radius: 20px;
     }
     .Achieve{
-        margin-left: 10%;
-        width: 100%;
-        border-radius: 100%;
+        /* margin-left: 20%; */
+        width: 70%;
+        border-radius: 90%;
+        margin: 6%;
+        align-items: center;
+        margin-left: 15%;
+        margin-top: 1%;
+       
     }
     #sign{
-        background-color: black;
+        background-color: black; 
         border: solid 1px;
         border-color: black;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        width: 70px; 
+    }
+    
+    #logo{
+        height: 30px;
+    }
+    #last{
+        text-align: center;
+        color:rgb(15, 231, 231);
+    }
+    #icon{
+        
+        gap: 50px;
+        align-items: center;
+    }
+    #Summary{
+        border: solid 1px;
+        background-color: aqua;
+        /* margin-left: 10%; */
+        /* margin-right:100px; */
+        height: 550px;
+        width: 100%;
+        justify-content: center;
+        border-radius: 5px;
+        font-size: 15px;
+    
+    }
+    #button{
         padding: 10px;
     }
-    #logo{
-        height: 70px;
+    #nyj{
+        margin-left: 20px;
     }
-    
-    
+    #signin {
+        border: solid 1px;
+        padding: 20px;
+        text-decoration-line: none;
+        border-radius: 20px;
+    }
+    #signin a{
+        text-decoration: none;
+    }
 }
 @media screen and ( min-width:500px) and (max-width:1280px){
     .form{
@@ -355,52 +464,50 @@
         width: 90%;
         border: solid 2px; color: black;
         justify-content: center;
-        
     }
     .input{
         padding: 20px;
         border-radius: 5px;
         border: solid 2px;
-        width: 60%;
-       
-        align-items: center;
+        width: 90%;
+       justify-content: center;
         
     }
-    ::-ms-input-placeholder { 
+    ::-ms-input-placeholder { /* Edge 12-18 */
         color:rgb(13, 207, 207);
       }
       
       ::placeholder {
         color:rgb(13, 207, 207);
       }
-    button{
-        padding:  60 px;
-        border: 5px solid black;
-        background-color:white;
-        color:white;
-        border-radius: 5px ;
-        width: 50%;
-    }
+    
     .icons{
-       align-items: center;
-       gap: 50px;
+        justify-content: space-around;
     }
     #signup{
         text-align: center;
     }
+    #sign{
+        background-color: #f44336;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
     
     .navbar{
-        display: flex;
+        display:flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-top: 10px;
-        border: solid 1px;
-        align-items: center;
+        justify-content: space-evenly; 
+        text-decoration: none;
+        border: solid 1px; 
+       
         border-color:aqua;
-        border-radius: 10px;
-        background-color: aquamarine;
-        font-size: 20px;
-        gap:40px;
+        border-radius: 20px;
+        background-color: aquamarine; 
+        font-size: 18px; 
     }
     
     .landingpagebody{
@@ -409,8 +516,8 @@
         background-color:white;
         justify-content: space-around;
         text-decoration:black;
-        margin: 50px;
-        gap: 50px;
+        margin: 30px;
+        /* gap: 0px; */
     }
     .landingpagetext{
         display:block;
@@ -418,8 +525,8 @@
         color:black;
     }
     #landingpageimage{
-        width: 500px;
-        height: 400px;
+        width: 300px;
+        height: 200px;
         border-radius: 15px;
         
     }
@@ -444,24 +551,36 @@
     
     }
     .mentor{
-        border: solid;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 15%;
+         width: 90%;
+        border-radius: 20px;
+        border: solid 1px;
+        justify-content: center;
+        text-align: center;
+        margin: 50px;
+    }
+    #texts{
        
-       
+        font-size: 90px;
+    
     }
     .Goals{
-        border: solid 1px;
+        /* border: solid 1px;
         background-color: aquamarine;
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 15px;
+        height: 200px;
+        border-color: black; */
+        border: solid 1px;
+        margin: 50px;
     }
     
     .To-do{
-        border: solid;
+        border: solid 1px;
         align-items:center ;
-        width:40% ;
-        margin-left: 30%;
-        height: 5%;
+        width:90% ;
+        margin: 50px;
+        border-radius: 20px;
     }
     #texts{
        justify-content: center;
@@ -469,45 +588,95 @@
        font-size: 25px;
     }
     #profilepic{
-        margin-left: 20%;
-        border-radius: 50px;
+        width: 10%;
+        border-radius: 30px;
+    
     }
     #new-task{
         width: 60%;
         padding: 30px;
+        border-radius: 20px;
+        margin: 20px;
     }
     #add-task{
         width: 15%;
         padding: 10px;
-        background-color: black;
+        color: black;
+        border-radius: 10px;
     }
     #todo-list{
-        width: 52%;
-        padding: 10px;
+        
+        padding: 20px;
         background-color:white;
-        border-color: black;
-        border: solid 1px;
+        color:black;
+        border-radius: 10px;
+    
+       
     }
+    
     .Achievements{
         border: solid 1px;
-        width: 90%;
-        margin-left: 1%;
-        height: 700px;
+        width: 70%;
+        margin-left: 20%;
+        height: 600px;
+        border-radius: 20px;
     }
     .Achieve{
-        margin-left: 20%;
-        width: 50%;
-        border-radius: 0%;
-        margin-right: 15%;
+        /* margin-left: 20%; */
+        width: 70%;
+        border-radius: 90%;
+        margin: 6%;
+        align-items: center;
+        margin-left: 15%;
+        margin-top: 1%;
+       
     }
     #sign{
-        background-color: black;
+        background-color: black; 
         border: solid 1px;
         border-color: black;
-        padding: 10px;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        width: 70px; 
     }
+    
     #logo{
         height: 90px;
     }
-
+    #last{
+        text-align: center;
+        color:rgb(15, 231, 231);
+    }
+    #icon{
+        
+        gap: 50px;
+        align-items: center;
+    }
+    #Summary{
+        border: solid 1px;
+        background-color: aqua;
+        margin-left: 10%;
+        margin-right:100px;
+        height: 700px;
+        justify-content: center;
+        border-radius: 20px;
+        font-size: 25px;
+    
+    }
+    #button{
+        padding: 10px;
+    }
+    #nyj{
+        margin-left: 20px;
+    }
+    #signin {
+        border: solid 1px;
+        padding: 20px;
+        text-decoration-line: none;
+        border-radius: 20px;
+    }
+    #signin a{
+        text-decoration: none;
+    }
 }
