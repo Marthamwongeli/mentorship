@@ -126,7 +126,10 @@
 #profilepic{
     width: 18%;
     border-radius: 30px;
-    margin-left: 35%;
+    margin-left: 39%;
+    margin-top: 20px;
+    align-items: center;
+    
 
 }
 #new-task{
@@ -134,6 +137,7 @@
     padding: 30px;
     border-radius: 20px;
     margin: 20px;
+    
 }
 #add-task{
     width: 15%;
@@ -200,6 +204,7 @@
     justify-content: center;
     border-radius: 20px;
     font-size: 25px;
+    padding: 10px;
 
 }
 #button{
@@ -213,6 +218,10 @@
     border-radius: 20px;
 }
 #signin a{
+    text-decoration: none;
+}
+#nyj{
+    margin-left: 20px;
     text-decoration: none;
 }
 @media screen and ( min-width:250px) and (max-width:500px){
@@ -458,6 +467,7 @@
         width: 90%;
         border: solid 2px; color: black;
         justify-content: center;
+        height: 950px;
     }
     .input{
         padding: 20px;
@@ -489,20 +499,24 @@
       text-decoration: none;
       display: inline-block;
     }
+    .navbar{ 
     
-    
-    .navbar{
-        display:grid;
-        flex-direction: column;
-        justify-content: space-evenly; 
-        text-decoration: none;
-        border: solid 1px; 
-       
-        border-color:aqua;
+        font-size: 30px;
+        justify-content: space-around;
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: solid 1px;
+        background-color: aquamarine;
+        padding: 20px;
         border-radius: 20px;
-        background-color: aquamarine; 
-        font-size: 18px; 
     }
+    .navbar a{
+        text-decoration: none;
+    }
+    
+    
     
     .landingpagebody{
         display: flex;
